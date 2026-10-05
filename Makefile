@@ -21,3 +21,6 @@ check: test lint
 
 build:
 	uv build
+
+gendiff:
+	uv run gendiff -h
