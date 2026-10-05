@@ -15,3 +15,8 @@ qa-auto-engineer-python-project-241 = "qa_auto_engineer_python_project_241:main"
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10",
+]
