@@ -21,6 +21,3 @@ dev = [
     "pytest>=9.1.1",
     "ruff>=0.16.10",
 ]
-
-[tool.coverage.report]
-fail_under = 0
