@@ -12,7 +12,7 @@ test:
 	uv run pytest
 
 test-coverage:
-	uv run pytest --cov=hexlet_python_package --cov-report term --cov-report xml
+	uv run pytest --cov=hexlet_code --cov-report term --cov-report xml
 
 lint:
 	uv run ruff check
