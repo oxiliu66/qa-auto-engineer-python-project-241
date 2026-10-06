@@ -1,9 +1,11 @@
 import argparse
 import json
 
+
 def json_reader(file):
     with open(file) as f:
         return json.load(f)
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -21,6 +23,7 @@ def main():
 
     print(data1)
     print(data2)
+
 
 if __name__ == '__main__':
     main()
