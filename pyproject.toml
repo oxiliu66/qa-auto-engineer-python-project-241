@@ -23,3 +23,5 @@ dev = [
     "ruff>=0.16.10",
 ]
 
+[tool.coverage.report]
+fail_under = 80
