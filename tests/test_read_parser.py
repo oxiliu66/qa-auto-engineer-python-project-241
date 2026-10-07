@@ -33,3 +33,11 @@ def test_read_file1():
   "follow": False
 }
     assert json_reader(TESTDATA / 'file1.json') == expected
+
+def test_read_file2():
+    expected = {
+  "timeout": 20,
+  "verbose": True,
+  "host": "hexlet.io"
+}
+    assert json_reader(TESTDATA / 'file2.json') == expected
