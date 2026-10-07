@@ -2,10 +2,10 @@ import argparse
 import json
 
 
-
 def json_reader(file):
     with open(file) as f:
         return json.load(f)
+
 
 def format_value(value):
     if isinstance(value, bool):
@@ -13,6 +13,7 @@ def format_value(value):
     if value is None:
         return 'null'
     return str(value)
+
 
 def generate_diff(file1, file2):
     data1 = json_reader(file1)
@@ -37,8 +38,7 @@ def generate_diff(file1, file2):
     return '{\n' + '\n'.join(result) + '\n}'
 
 
-
-def main(): # pragma: no cover
+def main():  # pragma: no cover
     parser = argparse.ArgumentParser(
         prog="gendiff",
         description="Compares two configuration files and shows a difference."
@@ -49,10 +49,8 @@ def main(): # pragma: no cover
                         help='set format of output')
     args = parser.parse_args()
 
-    data1 = json_reader(args.first_file)
-    data2 = json_reader(args.second_file)
-
     print(generate_diff(args.first_file, args.second_file))
 
-if __name__ == '__main__': # pragma: no cover
+
+if __name__ == '__main__':  # pragma: no cover
     main()

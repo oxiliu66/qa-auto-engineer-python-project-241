@@ -34,6 +34,7 @@ def test_read_file1():
 }
     assert json_reader(TESTDATA / 'file1.json') == expected
 
+
 def test_read_file2():
     expected = {
   "timeout": 20,
