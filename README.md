@@ -13,7 +13,17 @@
 
 ## Установка
 
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
+install:
+	uv sync
+
+build:
+	uv build
+
+update:
+	uv lock --upgrade
+	uv sync
+
+
 
 ```bash
 git clone https://github.com/oxiliu66/qa-auto-engineer-python-project-241.git
@@ -22,7 +32,7 @@ cd qa-auto-engineer-python-project-241
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+[![asciicast](https://asciinema.org/a/wK9WKfckJtSjFS9A.svg)](https://asciinema.org/a/wK9WKfckJtSjFS9A)
 
 ---
 
