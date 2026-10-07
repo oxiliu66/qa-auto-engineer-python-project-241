@@ -1,5 +1,5 @@
 # Вычислитель отличий (QA Python)
-
+[![Python CI](https://github.com/oxiliu66/qa-auto-engineer-python-project-241/actions/workflows/run.yml/badge.svg)](https://github.com/oxiliu66/qa-auto-engineer-python-project-241/actions/workflows/run.yml)
 [![hexlet-check](https://github.com/oxiliu66/qa-auto-engineer-python-project-241/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/oxiliu66/qa-auto-engineer-python-project-241/actions)
 
 Консольная утилита, которая сравнивает два плоских файла JSON или YAML и выводит разницу в трёх форматах. Проект стоит в профессии тестировщика, поэтому основная работа идёт над тестами. Вы пишете их на pytest, сверяете вывод утилиты с эталонными файлами и задаёте порог покрытия, при просадке которого падает сборка в GitHub Actions.

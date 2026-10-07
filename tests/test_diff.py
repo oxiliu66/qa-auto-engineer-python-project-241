@@ -2,7 +2,7 @@ from pathlib import Path
 
 from hexlet_code.scripts.gendiff import generate_diff
 
-TESTDATA = Path(__file__).parent / 'testdata'
+TESTDATA = Path(__file__).parent / 'test_data'
 
 
 def test_generate_diff():
@@ -14,8 +14,8 @@ def test_generate_diff():
   + timeout: 20
   + verbose: true
 }"""
-    assert (generate_diff(TESTDATA / 'file1.json', TESTDATA / 'file2.json')
-            == expected)
+    assert (generate_diff(TESTDATA / 'file1.json', TESTDATA / 'file2.json') ==
+            expected)
 
 
 def test_generate_diff_negative():

@@ -2,7 +2,7 @@ from pathlib import Path
 
 from hexlet_code.scripts.gendiff import json_reader
 
-TESTDATA = Path(__file__).parent / 'testdata'
+TESTDATA = Path(__file__).parent / 'test_data'
 
 
 def test_keys_file1():
