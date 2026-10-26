@@ -42,3 +42,4 @@ def test_read_file2():
   "host": "hexlet.io"
 }
     assert json_reader(TESTDATA / 'file2.json') == expected
+
