@@ -6,14 +6,7 @@ TESTDATA = Path(__file__).parent / 'test_data'
 
 
 def test_generate_diff():
-    expected = """{
-  - follow: false
-    host: hexlet.io
-  - proxy: 123.234.53.22
-  - timeout: 50
-  + timeout: 20
-  + verbose: true
-}"""
+    expected = (TESTDATA / 'expected_diff.json').read_text()
     assert (generate_diff(TESTDATA / 'file1.json', TESTDATA / 'file2.json') ==
             expected)
 
