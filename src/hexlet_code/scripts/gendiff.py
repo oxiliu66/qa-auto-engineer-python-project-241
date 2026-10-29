@@ -1,42 +1,19 @@
 import argparse
 import json
-
+from hexlet_code.parser import parser
+from hexlet_code.formatter.diff_generate import build_diff
+from hexlet_code.formatter.stylish import format_style
 
 def json_reader(file):
     with open(file) as f:
         return json.load(f)
 
 
-def format_value(value):
-    if isinstance(value, bool):
-        return 'true' if value else 'false'
-    if value is None:
-        return 'null'
-    return str(value)
-
-
 def generate_diff(file1, file2):
-    data1 = json_reader(file1)
-    data2 = json_reader(file2)
-    result = []
-    all_keys = sorted(set(data1) | set(data2))
-
-    for key in all_keys:
-        if key in data1 and key in data2:
-            if data1[key] == data2[key]:
-                result.append(f'    {key}: {format_value(data1[key])}')
-            else:
-                result.append(f'  - {key}: {format_value(data1[key])}')
-                result.append(f'  + {key}: {format_value(data2[key])}')
-        elif key in data1:
-            result.append(f'  - {key}: {format_value(data1[key])}')
-        else:
-            result.append(f'  + {key}: {format_value(data2[key])}')
-
-    if not result:
-        return '{}'
-    return '{\n' + '\n'.join(result) + '\n}'
-
+    data1 = parser(file1)
+    data2 = parser(file2)
+    diff = build_diff(data1, data2)
+    return format_style(diff)
 
 def main():  # pragma: no cover
     parser = argparse.ArgumentParser(

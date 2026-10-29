@@ -7,7 +7,9 @@ authors = [
     { name = "g.nikolaev", email = "mendeleev8@yandex.ru" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pyyaml>=6.0.3",
+]
 
 [project.scripts]
 gendiff = "hexlet_code.scripts.gendiff:main"

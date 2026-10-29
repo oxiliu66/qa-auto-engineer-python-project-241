@@ -1,4 +1,4 @@
-from hexlet_code.scripts.gendiff import format_value
+from hexlet_code.formatter.stylish import format_value
 
 
 def test_format_value():
