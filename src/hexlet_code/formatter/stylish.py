@@ -5,6 +5,7 @@ def format_value(value):
         return 'null'
     return str(value)
 
+
 def format_style(diff):
     lines = []
     for item in diff:

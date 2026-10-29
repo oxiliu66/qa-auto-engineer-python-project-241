@@ -1,4 +1,3 @@
-from .stylish import format_value
 
 def build_diff(data1, data2):
     result = []

@@ -1,8 +1,10 @@
 import argparse
 import json
-from hexlet_code.parser import parser
+
 from hexlet_code.formatter.diff_generate import build_diff
 from hexlet_code.formatter.stylish import format_style
+from hexlet_code.parser import parser
+
 
 def json_reader(file):
     with open(file) as f:
@@ -14,6 +16,7 @@ def generate_diff(file1, file2):
     data2 = parser(file2)
     diff = build_diff(data1, data2)
     return format_style(diff)
+
 
 def main():  # pragma: no cover
     parser = argparse.ArgumentParser(
