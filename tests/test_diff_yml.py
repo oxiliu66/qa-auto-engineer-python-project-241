@@ -27,7 +27,7 @@ def test_generate_diff_same_file():
     timeout: 50
 }"""
     assert (generate_diff(TESTDATA / 'yml_file_1.yaml', TESTDATA /
-                          'yml_file_2.yaml')
+                          'yml_file_1.yaml')
             == expected)
 
 
