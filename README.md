@@ -32,7 +32,7 @@ cd qa-auto-engineer-python-project-241
 
 ## Использование
 
-[![asciicast](https://asciinema.org/a/wK9WKfckJtSjFS9A.svg)](https://asciinema.org/a/wK9WKfckJtSjFS9A)
+[![asciicast](https://asciinema.org/a/0HgglFeAMIdmVgyA.svg)](https://asciinema.org/a/0HgglFeAMIdmVgyA)
 
 ---
 
