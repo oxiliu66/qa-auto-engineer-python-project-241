@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from hexlet_code.scripts.gendiff import generate_diff
+from gendiff.scripts.gendiff import generate_diff
 
 TESTDATA = Path(__file__).parent / 'test_data'
 

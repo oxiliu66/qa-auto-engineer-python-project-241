@@ -1,5 +1,5 @@
-from hexlet_code.formatters.plain import format_plain_value
-from hexlet_code.formatters.stylish import format_value
+from gendiff.formatters.plain import format_plain_value
+from gendiff.formatters.stylish import format_value
 
 
 def test_format_value():

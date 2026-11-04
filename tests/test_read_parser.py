@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from hexlet_code.scripts.gendiff import json_reader
+from gendiff.scripts.gendiff import json_reader
 
 TESTDATA = Path(__file__).parent / 'test_data'
 

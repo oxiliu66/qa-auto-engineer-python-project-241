@@ -1,11 +1,11 @@
 import argparse
 import json
 
-from hexlet_code.diff_generate import build_diff
-from hexlet_code.formatters.json import format_json
-from hexlet_code.formatters.plain import format_plain
-from hexlet_code.formatters.stylish import format_style
-from hexlet_code.parser import parser
+from gendiff.diff_generate import build_diff
+from gendiff.formatters.json import format_json
+from gendiff.formatters.plain import format_plain
+from gendiff.formatters.stylish import format_style
+from gendiff.parser import parser
 
 
 def json_reader(file):
