@@ -37,6 +37,8 @@ cd qa-auto-engineer-python-project-241
 
 Plain format:
 [![asciicast](https://asciinema.org/a/iYs0jlpdwfc3v4UO.svg)](https://asciinema.org/a/iYs0jlpdwfc3v4UO)
+Json format:
+[![asciicast](https://asciinema.org/a/f0Ftz0QTCOcilECF.svg)](https://asciinema.org/a/f0Ftz0QTCOcilECF)
 ---
 
 <details>
