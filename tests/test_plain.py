@@ -6,7 +6,7 @@ TESTDATA = Path(__file__).parent / 'test_data'
 
 
 def test_generate_diff():
-    expected = (TESTDATA / 'expected_plain.txt').read_text()
+    expected = (TESTDATA / 'expected_plain.txt').read_text().strip()
     assert (generate_diff(TESTDATA / 'yml_file_1.yaml', TESTDATA /
                           'yml_file_2.yaml', format='plain') ==
             expected)

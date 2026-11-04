@@ -2,6 +2,7 @@ import argparse
 import json
 
 from hexlet_code.diff_generate import build_diff
+from hexlet_code.formatters.json import format_json
 from hexlet_code.formatters.plain import format_plain
 from hexlet_code.formatters.stylish import format_style
 from hexlet_code.parser import parser
@@ -20,6 +21,8 @@ def generate_diff(file1, file2, format='stylish'):
         return format_style(diff)
     elif format == 'plain':
         return format_plain(diff)
+    elif format == 'json':
+        return format_json(diff)
     else:
         raise ValueError(f'Unknown format: {format}')
 
