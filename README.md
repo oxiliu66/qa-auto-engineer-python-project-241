@@ -34,7 +34,7 @@ cd qa-auto-engineer-python-project-241
 ## Использование
 
 [![asciicast](https://asciinema.org/a/0HgglFeAMIdmVgyA.svg)](https://asciinema.org/a/0HgglFeAMIdmVgyA)
----
+
 Plain format:
 [![asciicast](https://asciinema.org/a/iYs0jlpdwfc3v4UO.svg)](https://asciinema.org/a/iYs0jlpdwfc3v4UO)
 ---
