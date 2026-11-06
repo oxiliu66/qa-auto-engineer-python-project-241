@@ -4,7 +4,7 @@ def build_diff(data1, data2):
     all_keys = sorted(set(data1) | set(data2))
     for key in all_keys:
         if key in data1 and key in data2:
-            if data1[key] == data2[key]:
+            if type(data1[key]) == type(data2[key]) and data1[key] == data2[key]:
                 result.append(('unchanged', key, data1[key]))
             else:
                 result.append(('changed', key, data1[key], data2[key]))

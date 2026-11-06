@@ -43,3 +43,16 @@ def test_generate_diff_unknown_format():
             TESTDATA / 'yml_file_2.yaml',
             format='unknown'
         )
+
+
+def test_generate_diff_bool_vs_int_plain():
+    expected = """{
+  - value: false
+  + value: 0
+}"""
+    result = generate_diff(
+        TESTDATA / 'file_with_zero.json',
+        TESTDATA / 'file_with_zero2.json'
+    )
+    assert result == expected
+

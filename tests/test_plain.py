@@ -79,3 +79,12 @@ def test_generate_diff_plain_same_file2():
     )
     assert result == ''
 
+
+def test_generate_diff_bool_vs_int_plain():
+    result = generate_diff(
+        TESTDATA / 'file_with_zero.json',
+        TESTDATA / 'file_with_zero2.json',
+        format='plain'
+    )
+    assert result == "Property 'value' was updated. From false to 0"
+

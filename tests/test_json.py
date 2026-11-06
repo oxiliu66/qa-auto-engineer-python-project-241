@@ -60,3 +60,19 @@ def test_generate_diff_json_same_file2():
     )
     assert result == expected
 
+def test_generate_diff_bool_vs_int_json():
+    expected = """[
+  {
+    "status": "changed",
+    "key": "value",
+    "old_value": false,
+    "new_value": 0
+  }
+]"""
+    result = generate_diff(
+        TESTDATA / 'file_with_zero.json',
+        TESTDATA / 'file_with_zero2.json',
+        format='json'
+    )
+    assert result == expected
+
