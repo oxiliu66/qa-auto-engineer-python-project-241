@@ -60,6 +60,7 @@ def test_generate_diff_json_same_file2():
     )
     assert result == expected
 
+
 def test_generate_diff_bool_vs_int_json():
     expected = """[
   {
