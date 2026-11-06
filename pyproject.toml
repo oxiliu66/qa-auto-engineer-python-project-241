@@ -31,10 +31,3 @@ dev = [
 
 [tool.coverage.report]
 fail_under = 80
-
-[tool.sonar]
-projectKey = "oxiliu66_qa-auto-engineer-python-project-241"
-organization = "oxiliu66"
-sources = "src"
-tests = "tests"
-python.coverage.reportPaths = "coverage.xml"
